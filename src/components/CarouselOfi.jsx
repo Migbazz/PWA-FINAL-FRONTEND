@@ -10,14 +10,14 @@ export default function CarouselOfi() {
       <MDBCarouselItem
         className='w-100 d-block'
         itemId={1}
-        src="src/assets/slider_1.png" /*1320px 583px*/
+        src="../../public/slider_1.png" /*1320px 583px*/
         alt="copa fifa"
       >
       </MDBCarouselItem>
       <MDBCarouselItem
         className='w-100 d-block'
         itemId={2}
-        src='src/assets/slider_2.png'
+        src='../../public/slider_2.png'
         alt='...'
       >
       </MDBCarouselItem>
@@ -25,7 +25,7 @@ export default function CarouselOfi() {
       <MDBCarouselItem
         className='w-100 d-block'
         itemId={3}
-        src='src/assets/slider_3.png'
+        src='../../public/slider_3.png'
         alt='...'
       >
       </MDBCarouselItem>

@@ -23,7 +23,7 @@ const Footer = () => {
                   rippleColor='light'
                   className='bg-image hover-overlay shadow-1-strong rounded'
                 >
-                  <img src='src/assets/team_mb2.jpg' className='w-200 rounded-circle' />
+                  <img src='../../public/team_mb2.jpg' className='w-200 rounded-circle' />
                   
                   <div className='mask'>
                     <div className='bottom-0 d-flex align-items-end h-100 text-center justify-content-center'>
