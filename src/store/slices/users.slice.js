@@ -18,7 +18,7 @@ export const { setValue } = userSlice.actions;
 export default userSlice.reducer;
 
 export const getUserThunk = (data) => (dispatch) =>{
-    const URL ="http://localhost:3001/users/auth"
+    const URL ="https://pwa-final-backend-production.up.railway.app/users/auth"
     return axios.post(URL,data)
     .then(res =>{
         console.log(res.data)

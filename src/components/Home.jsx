@@ -15,7 +15,7 @@ const Home = () => {
  
    const [categories, setCategories] = useState()
    useEffect(() => {
-      const url = "http://localhost:3001/categories"
+      const url = "https://pwa-final-backend-production.up.railway.app/categories"
       axios.get(url)
          .then(res => {
             setCategories(res.data.data)

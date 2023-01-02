@@ -24,7 +24,7 @@ import {
   MDBInput
 } from 'mdb-react-ui-kit';
 
-const BACKEND_ADDRESS = 'http://localhost:3001';
+const BACKEND_ADDRESS = 'https://pwa-final-backend-production.up.railway.app';
 
 const Navbar = () => {
 

@@ -21,7 +21,7 @@ import {
 import crypto from 'crypto-js'
 import axios from 'axios';
 import { Link } from 'react-router-dom';
-const BACKEND_ADDRESS = 'http://localhost:3001';
+const BACKEND_ADDRESS = 'https://pwa-final-backend-production.up.railway.app/';
 
 function Login(){
 	const privateSeed = 'DigitalHouse';
@@ -117,15 +117,15 @@ function Login(){
 					
 					{redirect ? <Link to="/"/> : ''}
 					<div className="text-center">
-					  <p>Olvidé mi usuario o contraseña. :(</p>
+						<p>Olvidé mi usuario o contraseña. :(</p>
 					</div>
 					{loginError ? <div className="alert alert-danger text-center my-4 fs-2">Usuario o contraseña incorrecta</div> : <></>}
-				  </MDBCardBody>
+				</MDBCardBody>
 				</MDBCard>
-			  </MDBCol>
+				</MDBCol>
 			</MDBRow>
-		  </MDBContainer>
-		  <ToastContainer 
+		</MDBContainer>
+		<ToastContainer 
 		position="top-center"
 		autoClose={1000}
 		hideProgressBar
@@ -136,32 +136,9 @@ function Login(){
 		draggable
 		pauseOnHover
 		theme="dark"
-		  />
+		/>
 		</div>
-	  )
-	//   (
-	// 	<div className="container-fluid">
-	// 			<>
-	// 				<div className="row my-4">
-	// 					<div className="col-12 col-md-6">
-	// 						{/* Login Form */}
-	// 						{/* <form method="POST" onSubmit={loginFetch}> */}
-	// 							<div className="form-group">
-	// 								<label htmlFor="">Nombre de usuario o email:</label>
-	// 								<input type="text" ref={username} className="form-control" id="email"/>
-	// 								<label htmlFor="">Contraseña:</label>
-	// 								<input type="password" ref={password} className="form-control" id="password"/>
-	// 							</div>
-	// 								<button className="btn btn-info" onClick={loginFetch}>Login</button>
-	// 								{redirect ? <redirect to="/"/> : ''}
-	// 						{/* </form> */}
-	// 					</div>
-	// 				</div>
-	// 			</>
-	// 		{loginError ? <div className="alert alert-danger text-center my-4 fs-2">Usuario o contraseña incorrecta</div> : <></>}
-			
-	// 	</div>
-	// )
+	)
 }
 
 export default Login;

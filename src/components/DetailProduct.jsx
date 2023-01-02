@@ -11,7 +11,7 @@ const DetailProduct = () => {
   const { id } = useParams()
   const [product, setProduct] = useState({})
   useEffect(() => {
-    const url = `http://localhost:3001/products/${id}/`
+    const url = `https://pwa-final-backend-production.up.railway.app/products/${id}/`
     axios.get(url)
       .then(res => setProduct(res.data.data))
       .catch(e => console.log(e))

@@ -32,7 +32,7 @@ const Purchase = () => {
   useEffect(() => {
     //let URL = "http://localhost:3001/cart/2"
     if (user !== "") {
-      URL = `http://localhost:3001/cart/${user.id}`
+      URL = `https://pwa-final-backend-production.up.railway.app/cart/${user.id}`
       axios.get(URL)
       .then(res => {
         console.log(res.data)
@@ -58,7 +58,7 @@ const Purchase = () => {
 
   const navigate =useNavigate()
   const handleClick = () =>{
-    let URL ="http://localhost:3001/checkout"
+    let URL ="https://pwa-final-backend-production.up.railway.app/checkout"
     //console.log("usuario",user)
     if(user){
       axios.post(URL,{

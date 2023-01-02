@@ -10,7 +10,7 @@ const Products = () => {
   const cate= useSelector(state => state.cate)
   const [products, setProducts] = useState([])
   useEffect(() => {
-    const url = "http://localhost:3001/products"
+    const url = "https://pwa-final-backend-production.up.railway.app/products"
     axios.get(url)
       .then(res => setProducts(res.data.data))
       .catch(e => console.log(e, "entro"))
@@ -24,31 +24,10 @@ const Products = () => {
         <MDBRow className='d-flex justify-content-center'>
           {
             products.map(product => {
-                 if(product.category_id==cate)
+                if(product.category_id==cate)
               return <Product props={product} key={product.id} />
             })
           }
-          {/* <MDBCol lg='3' md='2' className='mb-4 hover-zoom'>
-            <img
-              src='https://cdn.solodeportes.com.ar/media/catalog/product/cache/7c4f9b393f0b8cb75f2b74fe5e9e52aa/c/a/camiseta-de-argentina-adidas-oficial-messi-10-blanca-100020fs6565010-1.jpg'
-              className='img-fluid rounded-circle'
-              alt=''
-            />
-            <h3 class="tex-product">abc </h3>
-            <p>ADIDAS OFICIAL MESSI 10 BLANCA</p>
-            <h4>8.000 PUNTOS</h4>
-          </MDBCol>
-          <MDBCol lg='3' md='2' className='mb-4 hover-zoom'>
-            <img
-              src='https://cdn.solodeportes.com.ar/media/catalog/product/cache/7c4f9b393f0b8cb75f2b74fe5e9e52aa/z/a/zapatillas-entrenamiento-atomik-sigma-velcro-ni-o-ni-a-negra-21201307805a194-1.jpg'
-              className='img-fluid rounded-circle'
-              alt=''
-            />
-            <h3 class="tex-product">ZAPATILLAS NIÑO NIÑA NEGRA</h3>
-            <p>Comodidad y estilo para tus entrenamientos con las nuevas ATOMIK Sigma.
-              Cuenta con cordones elásticos y ajuste de velcro.</p>
-            <h4>750 PUNTOS</h4>
-          </MDBCol> */}
         </MDBRow>
       </MDBContainer>
     </section>

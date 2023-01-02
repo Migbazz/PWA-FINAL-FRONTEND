@@ -15,7 +15,7 @@ const ProductCart = ({ product, setDeleteProduct, deleteProduct }) => {
 
   const dispatch = useDispatch()
   const handleClick = () => {
-    const URL = "http://localhost:3001/delete"
+    const URL = "https://pwa-final-backend-production.up.railway.app/delete"
 
     const data = {
       user: user,

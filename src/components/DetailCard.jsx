@@ -27,7 +27,7 @@ const DetailCard = ({ product }) => {
 
   const handleClick = () => {
     if (user) {
-      const url = 'http://localhost:3001/agregar';
+      const url = 'https://pwa-final-backend-production.up.railway.app/agregar';
       let data = {}
       if (user.orderSales == 0) {
         data = {

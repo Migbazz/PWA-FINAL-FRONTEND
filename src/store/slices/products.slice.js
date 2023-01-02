@@ -15,7 +15,7 @@ export const { setValueProduct } = productSlice.actions;
 export default productSlice.reducer;
 
 export const getProductThunk = (id) => (dispach) =>{
-    const URL =`http://localhost:3001/cart/${id}`
+    const URL =`https://pwa-final-backend-production.up.railway.app/cart/${id}`
     return axios.get(URL)
     .then(res => {
         const cant= res.data.products.length
