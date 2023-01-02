@@ -9,6 +9,7 @@ import {
   MDBRipple,
   MDBBtn
 } from 'mdb-react-ui-kit';
+import Miguel from '../../public/team_mb2.jpg'
 
 const Footer = () => {
   return (
@@ -23,7 +24,7 @@ const Footer = () => {
                   rippleColor='light'
                   className='bg-image hover-overlay shadow-1-strong rounded'
                 >
-                  <img src='../../public/team_mb2.jpg' className='w-200 rounded-circle' />
+                  <img src={Miguel} className='w-200 rounded-circle' />
                   
                   <div className='mask'>
                     <div className='bottom-0 d-flex align-items-end h-100 text-center justify-content-center'>
