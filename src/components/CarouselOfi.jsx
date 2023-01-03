@@ -3,6 +3,9 @@ import {
   MDBCarousel,
   MDBCarouselItem,
 } from 'mdb-react-ui-kit';
+import slider1 from '../../public/slider_1.png'
+import slider2 from '../../public/slider_2.png'
+import slider3 from '../../public/slider_3.png'
 
 export default function CarouselOfi() {
   return (
@@ -10,14 +13,14 @@ export default function CarouselOfi() {
       <MDBCarouselItem
         className='w-100 d-block'
         itemId={1}
-        src="../../public/slider_1.png" /*1320px 583px*/
+        src={slider1} /*1320px 583px*/
         alt="copa fifa"
       >
       </MDBCarouselItem>
       <MDBCarouselItem
         className='w-100 d-block'
         itemId={2}
-        src='../../public/slider_2.png'
+        src={slider2}
         alt='...'
       >
       </MDBCarouselItem>
@@ -25,7 +28,7 @@ export default function CarouselOfi() {
       <MDBCarouselItem
         className='w-100 d-block'
         itemId={3}
-        src='../../public/slider_3.png'
+        src={slider3}
         alt='...'
       >
       </MDBCarouselItem>
