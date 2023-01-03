@@ -6,7 +6,7 @@
 
 Este proyecto apunta a empresas que en función de su estrategia de retención de clientes deseen poseer un sistema de fidelización donde se premian los consumos con puntos intercambiables por bienes, servicios o experiencias.
 
-Partimos del supuesto de que esta empresa  o empresas tienen clientes registrados con un mail y les han asignado puntos por sus compras por lo que los invita a hacer uso de los mismos en GiftClub.
+Partiendo del supuesto de que esta empresa  o empresas tienen clientes registrados con un mail y les han asignado puntos por sus compras por lo que los invita a hacer uso de los mismos en GiftClub.
 Con los puntos obtenidos se accederá a la posibilidad de canjear los mismos por productos / merchandising del mundial, entre otros.
 
 ### Tecnologías 🚀:
