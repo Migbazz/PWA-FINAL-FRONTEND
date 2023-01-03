@@ -76,9 +76,9 @@ function Login(){
 					const role=data.user.role
 					
 					if(data.orderSales){
-						 let orderPoints=data.user.orderSales.ammount
-						 let cant=data.user.orderSales.items_q
-						 dispatch(setValueProduct({cant}))
+						let orderPoints=data.user.orderSales.ammount
+						let cant=data.user.orderSales.items_q
+						dispatch(setValueProduct({cant}))
 						dispatch(setValue({id,name,email,points,role,address,orderPoints,cant,image}))
 					}else{
 						dispatch(setValueProduct({cant:0}))
