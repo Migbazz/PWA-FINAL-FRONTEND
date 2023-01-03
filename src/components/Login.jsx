@@ -21,7 +21,7 @@ import {
 import crypto from 'crypto-js'
 import axios from 'axios';
 import { Link } from 'react-router-dom';
-const BACKEND_ADDRESS = 'https://pwa-final-backend-production.up.railway.app/';
+const BACKEND_ADDRESS = 'https://pwa-final-backend-production.up.railway.app';
 
 function Login(){
 	const privateSeed = 'DigitalHouse';
